@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Rickker.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="keyboard">
+    <div class="row">
+      <div id="Escape" class="keys wide">Esc</div>
+      <div id="F1" class="keys">F1</div>
+      <div id="F2" class="keys">F2</div>
+      <div id="F3" class="keys">F3</div>
+      <div id="F4" class="keys">F4</div>
+      <div id="F5" class="keys">F5</div>
+      <div id="F6" class="keys">F6</div>
+      <div id="F7" class="keys">F7</div>
+      <div id="F8" class="keys">F8</div>
+      <div id="F9" class="keys">F9</div>
+      <div id="F10" class="keys">F10</div>
+      <div id="F11" class="keys">F11</div>
+      <div id="F12" class="keys">F12</div>
+      <div id="Home" class="keys">Home</div>
+    </div>
+    <div class="row">
+      <div id="Dead" class="keys wide">~<br>`</div>
+      <div id="1" class="keys">1</div>
+      <div id="2" class="keys">2</div>
+      <div id="3" class="keys">3</div>
+      <div id="4" class="keys">4</div>
+      <div id="5" class="keys">5</div>
+      <div id="6" class="keys">6</div>
+      <div id="7" class="keys">7</div>
+      <div id="8" class="keys">8</div>
+      <div id="9" class="keys">9</div>
+      <div id="0" class="keys">0</div>
+      <div id="-" class="keys">-</div>
+      <div id="+" class="keys">+</div>
+      <div id="Backspace" class="keys wide">Backspace</div>
+    </div>
+    <div class="row">
+      <div id="tab" class="keys wide">Tab</div>
+      <div id="q" class="keys">Q</div>
+      <div id="w" class="keys">W</div>
+      <div id="e" class="keys">E</div>
+      <div id="r" class="keys">R</div>
+      <div id="t" class="keys">T</div>
+      <div id="y" class="keys">Y</div>
+      <div id="u" class="keys">U</div>
+      <div id="i" class="keys">I</div>
+      <div id="o" class="keys">O</div>
+      <div id="p" class="keys">P</div>
+    </div>
+    <div class="row">
+      <div id="CapsLock" class="keys wide">Caps Lock</div>
+      <div id="a" class="keys">A</div>
+      <div id="s" class="keys">S</div>
+      <div id="d" class="keys">D</div>
+      <div id="f" class="keys">F</div>
+      <div id="g" class="keys">G</div>
+      <div id="h" class="keys">H</div>
+      <div id="j" class="keys">J</div>
+      <div id="k" class="keys">K</div>
+      <div id="l" class="keys">L</div>
+      <div id="'" class="keys">'</div>
+      <div id="Enter" class="keys wide">Enter</div>
+    </div>
+    <div class="row">
+      <div id="Shift" class="keys wide">Shift</div>
+      <div id="z" class="keys">Z</div>
+      <div id="x" class="keys">X</div>
+      <div id="c" class="keys">C</div>
+      <div id="v" class="keys">V</div>
+      <div id="b" class="keys">B</div>
+      <div id="n" class="keys">N</div>
+      <div id="m" class="keys">M</div>
+      <div id="," class="keys">,</div>
+      <div id="." class="keys">.</div>
+    </div>
+    <div class="row">
+      <div id="Control" class="keys wide">Ctrl</div>
+      <div id="Meta" class="keys">Win</div>
+      <div id="Alt" class="keys">Alt</div>
+      <div id=" " class="keys wide">Space</div>
+      <div id="AltGraph" class="keys">Alt</div>
+      <div id="ContextMenu" class="keys">Menu</div>
+    </div>
+  </div>
+
+<script>
+function keyPress(event) {
+  document.getElementById(event.key).style.backgroundColor = "white";
+}
+
+function keyRelease(event) {
+  document.getElementById(event.key).style.backgroundColor = "black";
+}
+
+document.addEventListener('keydown', keyPress);
+document.addEventListener('keyup', keyRelease);
+</script>
+</body>
+</html>
